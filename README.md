@@ -1,1 +1,30 @@
-# basic_drf_settings
+# DRF
+
+## Setup
+
+The first thing to do is to clone the repository:
+
+```sh
+$ git clone https://github.com/wcreativo/basic_drf_settings.git
+$ cd basic_drf_settings
+```
+
+Create a virtual environment to install dependencies in and activate it:
+
+```sh
+$ python3 -m venv .venv
+$ source .venv/bin/activate
+```
+
+Then install the dependencies:
+
+```sh
+(env)$ pip install -r requirements.txt
+```
+
+Once `pip` has finished downloading the dependencies:
+```sh
+(env)$ cd basic_drf_settings
+(env)$ python manage.py runserver
+```
+And navigate to `http://127.0.0.1:8000/swagger/`.
