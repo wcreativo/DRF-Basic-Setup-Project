@@ -37,7 +37,7 @@ And navigate to `http://127.0.0.1:8000/swagger/`.
     "python.pythonPath": ".venv/bin/python3",
     "python.formatting.provider": "black",
     "python.formatting.blackArgs": [
-        "--line-length=119"
+        "--line-length=120"
     ],
     "python.sortImports.args": [
         "--profile",
@@ -46,7 +46,13 @@ And navigate to `http://127.0.0.1:8000/swagger/`.
     "[python]": {
         "editor.codeActionsOnSave": {
             "source.organizeImports": true
-        }
-    }
+        },
+        "editor.rulers": [
+            120
+        ]
+    },
+    "python.linting.pylamaArgs": [
+        "--ignore=E501"
+    ]
 }
 ```
