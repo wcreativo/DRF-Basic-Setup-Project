@@ -29,7 +29,7 @@ BASE_APPS = [
 
 LOCAL_APPS = ["apps.users"]
 
-THIRD_APPS = ["drf_yasg"]
+THIRD_APPS = ["drf_spectacular", 'rest_framework', 'rest_framework.authtoken', 'dj_rest_auth']
 
 INSTALLED_APPS = BASE_APPS + LOCAL_APPS + THIRD_APPS
 
@@ -102,3 +102,7 @@ USE_TZ = True
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 AUTH_USER_MODEL = 'users.User'
+
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
